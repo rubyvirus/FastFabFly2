@@ -23,6 +23,8 @@
         <mysql.version>6.0.6</mysql.version>
         <!-- Test -->
         <testng.version>6.11</testng.version>
+        <allure.verison>1.5.2</allure.verison>
+        <rest.assured.version>3.0.2</rest.assured.version>
     </properties>
 
     <dependencies>
@@ -62,10 +64,22 @@
             <version>${mysql.version}</version>
         </dependency>
 
+        <!-- Test Package-->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>${testng.version}</version>
         </dependency>
+        <dependency>
+            <groupId>ru.yandex.qatools.allure</groupId>
+            <artifactId>allure-testng-adaptor</artifactId>
+            <version>${allure.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>${rest.assured.version}</version>
+        </dependency>
+
     </dependencies>
 </project>
